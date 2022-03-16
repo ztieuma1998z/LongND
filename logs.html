@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DashBoard</title>
+
+    <link rel="stylesheet" href="pink.css">
+    <link rel="stylesheet" href="logs.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #table tr {
+            display: none;
+        }
+        #nav .active div{
+            background: #ec1839;
+        }
+    </style>
+</head>
+<body>
+<div class="main-container">
+    <div class="header" style="width: 100%">
+        <a href="#dashboard" style="margin-right: 50px; color:#ec1839"><i style="font-size: 30px; margin-right: 15px" class="fa fa-user-circle"></i>Welcome John</a>
+    </div>
+    <div class="aside">
+        <!-- logo -->
+        <div class="logo">
+            <a href="#">PHP Geek 3</a>
+        </div>
+        <!-- Nav Toggler Btn -->
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <!-- Nav  -->
+        <ul class="nav">
+            <li><a href="#deviceManagement"><i class="fa fa-home"></i>Device Management</a></li>
+            <li><a href="dashboard.html"><i class="fa fa-user"></i>Dashboard</a></li>
+            <li><a href="logs.html"><i class="fa fa-users" class="active"></i>Logs</a></li>
+            <li><a href="#setting"><i class="fa fa-question"></i>Setting</a></li>
+        </ul>   
+    </div>
+    <div class="main-content">
+        <div class="sec">
+            <div style="padding:40px 0px 15px 40px; font-size: 30px; ">
+                Action Logs
+                <div style="display: inline-block; float: right; padding-right: 100px">
+                    <input type="text" placeholder="name" id="searchname">
+                    <input type="submit" value="Search" class="w1-submit" id="search">
+                </div>
+            </div>
+            <table id="table">
+            </table>
+            <div id="nav" class="flex-container"></div>
+        </div>
+    </div>
+</div>
+<script src="logs.js"></script>
+</body>
+</html>

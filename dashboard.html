@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="pink.css">
+    <link rel="stylesheet" href="logs.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="main-container">
+    <div id="menu" class="menu">
+        <i id="iconMenu" style="font-size: 30px; margin-right: 5%" class="fa fa-bars" onclick="menu()"></i>
+    </div>
+    <div class="header" style="width: 100%; padding-right: 0px">
+        <a href="#dashboard" style="margin-right: 50px; color:#ec1839"><i style="font-size: 30px; margin-right: 15px" class="fa fa-user-circle"></i>Welcome John</a>
+    </div>
+
+    <div id="aside" class="aside">
+        <!-- logo -->
+        <div class="logo">
+            <a href="#">PHP Geek 3</a>
+        </div>
+        <!-- Nav Toggler Btn -->
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <!-- Nav  -->
+        <ul class="nav">
+            <li><a href="#deviceManagement"><i class="fa fa-home"></i>Device Management</a></li>
+            <li><a href="dashboard.html" class="active"><i class="fa fa-bars"></i>Dashboard</a></li>
+            <li><a href="logs.html"><i class="fa fa-users"></i>Logs</a></li>
+            <li><a href="#setting"><i class="fa fa-question"></i>Setting</a></li>
+        </ul>
+        <!-- copyright  -->
+    </div>
+    <div class="main-content">
+        <table id="table" style="margin: 5%; width:90%; box-sizing: border-box;overflow-x:auto;">
+        </table>
+        <div style="margin: auto; box-sizing: border-box;background:red;width: 90%">
+            <div class="chart">
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="add-device" >
+                <input class="w1-input padd25"  id="name" type="text" placeholder="Name">
+                <input class="w1-input padd25"  id="mac_address" type="text" placeholder="mac address">
+                <input class="w1-input padd25" id="ip" type="text" placeholder="IP">
+                <input class="w1-input padd25" id="powerConsumption" type="text" placeholder="power consumption">
+                <div style="text-align: -webkit-center; padding-top:15px"><input class="w1-submit" onclick="submit()" type="submit" value="ADD DEVICE"> </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+
+</div>
+</body>
+</html>

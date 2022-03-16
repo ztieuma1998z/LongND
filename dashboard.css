@@ -1,0 +1,73 @@
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Rubik:wght@700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap');
+ tr:last-child{
+     font-weight: bold;
+ }
+tr td:last-child{
+    text-align:right;
+}
+.padd25{
+padding: 25px;
+}
+.chart{
+    width: 40%;
+    background: #f1f1f1;
+    margin: 0 ;
+    float: left;
+    box-sizing: border-box
+}
+#myChart{
+    width: 38%;
+}
+.add-device{
+    width: 50%; background: #f1f1f1;float:right;box-sizing: border-box; padding-top: 50px;
+    margin: 0 0 0 50px;
+}
+.menu{
+    font-size: 40px;
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #418826;
+    }
+    .aside,.header{
+        display: none;
+    }
+    .chart{
+        width: 100%;
+        max-height: 450px;
+        padding: 5%;
+    }
+    .chart div{
+        width: 100%;
+        display: block;
+    }
+    #table{
+        display: none;
+    }
+    .add-device{
+        width: 100%;
+        display: block;
+        margin:10% 0;
+        padding-top: 10%;
+    }
+    .main-content{
+        padding: 5%;
+        margin: 0;
+    }
+    .padd25{
+        padding: 15px;
+    }
+    .menu{
+        display: block;
+        padding-left: 8%;
+    }
+    .menu i{
+        color: #FFFFFF;
+    }
+}
